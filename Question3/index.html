@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+        <meta http-equiv="pragma" content="no-cache"/>
+        <title>GeoJSON Test</title>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="geojson.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>GeoJSON PROCESSING</h1>
+            <h3>Enter Longitude, Latitude, Srid, GeoJSON and Click the 'Find Closest Feature' button </h3>
+            <table>
+                <tr>
+                    <th><label for="longitude">Longitude:</label></th>
+                    <td><input type="text" id="longitude" size="50"/></td>
+                </tr>
+                <tr>
+                    <th><label for="latitude">Latitude:</label></th>
+                    <td><input type="text" id="latitude" size="50"/></td>
+                </tr>
+                <tr>
+                    <th><label for="srid">SRID:</label></th>
+                    <td><input type="text" id="srid" size="50"/></td>
+                </tr>
+                <tr>
+                    <th><label for="geojson">GeoJSON:</label></th>
+                    <td><textarea id="geojson" rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="button" id="findClosest" value="Find Closest Feature"/></td>
+                </tr>
+            </table>
+            <h2>RESULT: CLOSEST FEATURE</h2>
+            <table>
+                <tr>
+                    <th><label for="distance">Distance:</label></th>
+                    <td><input type="text" id="distance" size="50" readonly="readonly"/></td>
+                </tr>
+                <tr>
+                    <th><label for="closestFeature">Feature:</label></th>
+                    <td><textarea id="closestFeature" rows="10" cols="50" readonly="readonly"></textarea></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
